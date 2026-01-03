@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Cumple 🎉</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #3a3a6a);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      animation: fadeIn 2s ease forwards;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: slideDown 1.5s ease forwards;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      opacity: 0;
+      animation: typeIn 3s ease forwards;
+      animation-delay: 1.5s;
+    }
+
+    .signature {
+      margin-top: 30px;
+      text-align: right;
+      font-style: italic;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 4.5s;
+    }
+
+    .stars span {
+      position: absolute;
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 5s infinite ease-in-out;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes typeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stars">
+    <span style="top:10%; left:20%; animation-delay:0s"></span>
+    <span style="top:30%; left:70%; animation-delay:1s"></span>
+    <span style="top:60%; left:40%; animation-delay:2s"></span>
+    <span style="top:80%; left:80%; animation-delay:3s"></span>
+    <span style="top:50%; left:10%; animation-delay:4s"></span>
+  </div>
+
+  <div class="card">
+    <h1>Feliz cumpleaños, Tania 🎂</h1>
+    <p class="message">
+      Tania, hoy cumplís 20 🎉
+      <br><br>
+      Y aunque no siempre lo parezca, seguís siendo oficialmente joven para:
+      <br>– reírte de memes malos
+      <br>– comer torta sin culpa
+      <br>– y fingir que tenés todo bajo control 😌
+      <br><br>
+      No te traje la felicidad en una caja (todavía no la venden, lo intenté 😅),
+      pero sí este pequeño detalle para sacarte una sonrisa hoy.
+      <br><br>
+      A veces reír también cuenta como avanzar. Y hoy, con que sonrías un poquito, ya es suficiente 🤍
+    </p>
+
+    <div class="signature">
+      — Con cariño, Lucas 💙
+    </div>
+  </div>
+
+</body>
+</html>
